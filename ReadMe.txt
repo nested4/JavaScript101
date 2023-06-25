@@ -94,7 +94,7 @@ Throughout this course, we'll explore the similarities and differences between J
 To get started with the code examples in this repository, follow these steps:
 
 1. Clone the repository to your local machine:
-git clone 
+git clone https://github.com/nested4/JavaScript101.git
 
 2. Navigate to the cloned directory:
 2. Navigate to the cloned directory:
