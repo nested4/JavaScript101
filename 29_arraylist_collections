@@ -1,0 +1,57 @@
+// 29_arraylist_collections.js
+
+// ArrayList Continued and Collections Class
+// In this file, we will continue exploring ArrayList and introduce the Collections class in JavaScript.
+
+// Key Differences with Java:
+// 1. In Java, the Collections class is a utility class that provides various methods to work with collections, including ArrayList.
+//    In JavaScript, there is no built-in Collections class, but we can leverage JavaScript's built-in array methods to perform similar operations.
+
+// ArrayList Continued:
+
+// Create an ArrayList
+let arrayList = ["Apple", "Banana", "Orange"];
+
+// Add elements at a specific index
+arrayList.splice(1, 0, "Mango", "Grapes");
+console.log(arrayList); // Output: ["Apple", "Mango", "Grapes", "Banana", "Orange"]
+
+// Remove elements by index
+arrayList.splice(2, 2);
+console.log(arrayList); // Output: ["Apple", "Mango", "Orange"]
+
+// Sort the ArrayList
+arrayList.sort();
+console.log(arrayList); // Output: ["Apple", "Mango", "Orange"]
+
+// Reverse the ArrayList
+arrayList.reverse();
+console.log(arrayList); // Output: ["Orange", "Mango", "Apple"]
+
+// Collections Class (Simulating in JavaScript):
+
+// Utility functions to work with collections
+
+// Method to sort the collection
+function sortCollection(collection) {
+  return collection.slice().sort();
+}
+
+// Method to reverse the collection
+function reverseCollection(collection) {
+  return collection.slice().reverse();
+}
+
+// Sort the ArrayList using the simulated Collections class
+let sortedList = sortCollection(arrayList);
+console.log(sortedList); // Output: ["Apple", "Mango", "Orange"]
+
+// Reverse the ArrayList using the simulated Collections class
+let reversedList = reverseCollection(arrayList);
+console.log(reversedList); // Output: ["Orange", "Mango", "Apple"]
+
+// JavaScript provides a rich set of array methods that can be used to manipulate collections effectively.
+// While there is no built-in Collections class in JavaScript, we can create custom utility functions to perform common operations.
+
+// That concludes our exploration of ArrayList and the simulated Collections class in JavaScript!
+// Stay tuned for the next file where we will cover more concepts and topics.
